@@ -7,4 +7,28 @@
 @import './settings/_utils.scss';
 
 @import './components/grid_list';
-@import './components/color_sample'
+@import './components/color_sample';
+@import './components/header';
+
+
+
+.design-page {
+    .design__container {
+        margin-top: 5rem;
+    }
+
+    .grid-list {
+        justify-content: center;
+    }
+
+    h2 {
+        color: $color-dark-blue-gray;
+        margin-bottom: 2.5rem;
+    }
+
+    main {
+        @include media('desktop') {
+            padding: 1rem 10rem;
+        }
+    }
+}
