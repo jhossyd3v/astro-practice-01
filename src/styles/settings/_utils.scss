@@ -1,55 +1,93 @@
-.color--dark-blue-gray {
-    color: $color-dark-blue-gray;
+.color {
+    &--dark-blue-gray {
+        color: $color-dark-blue-gray;
+    }
+
+    &--dark-blue {
+        color: $color-dark-blue;
+    }
+
+    &--waterloo {
+        color: $color-waterloo;
+    }
+
+    &--violet-red {
+        color: $color-violet-red;
+    }
+
+    &--pink {
+        color: $color-pink;
+    }
+
+    &--white {
+        color: $color-white;
+    }
 }
 
-.color--dark-blue {
-    color: $color-dark-blue;
+.bg-color {
+    &--dark-blue-gray {
+        background-color: $color-dark-blue-gray;
+    }
+
+    &--dark-blue {
+        background-color: $color-dark-blue;
+    }
+
+    &--waterloo {
+        background-color: $color-waterloo;
+    }
+
+    &--violet-red {
+        background-color: $color-violet-red;
+    }
+
+    &--pink {
+        background-color: $color-pink;
+    }
+
+    &--white {
+        background-color: $color-white;
+    }
+
+    &--gradient-1 {
+        @include gradient-1();
+    }
+
+    &--gradient-2 {
+        @include gradient-2();
+    }
 }
 
-.color--waterloo {
-    color: $color-waterloo;
+
+.heading {
+    &--xl {
+        font-size: 56px;
+    }
+
+    &--l {
+        font-size: 40px;
+    }
+
+    &--m {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &--s {
+        font-size: 24px;
+    }
 }
 
-.color--violet-red {
-    color: $color-violet-red;
-}
+.text {
+    &--m {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+    }
 
-.color--pink {
-    color: $color-pink;
-}
-
-.color--white {
-    color: $color-white;
-}
-
-.bg-color--dark-blue-gray {
-    background-color: $color-dark-blue-gray;
-}
-
-.bg-color--dark-blue {
-    background-color: $color-dark-blue;
-}
-
-.bg-color--waterloo {
-    background-color: $color-waterloo;
-}
-
-.bg-color--violet-red {
-    background-color: $color-violet-red;
-}
-
-.bg-color--pink {
-    background-color: $color-pink;
-}
-
-.bg-color--white {
-    background-color: $color-white;
-}
-
-.bg-color--gradient-1 {
-    @include gradient-1();
-}
-
-.bg-color--gradient-2 {
-    @include gradient-2();
+    &--s {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+    }
 }
