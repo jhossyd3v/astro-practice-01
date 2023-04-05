@@ -1,0 +1,55 @@
+.color--dark-blue-gray {
+    color: $color-dark-blue-gray;
+}
+
+.color--dark-blue {
+    color: $color-dark-blue;
+}
+
+.color--waterloo {
+    color: $color-waterloo;
+}
+
+.color--violet-red {
+    color: $color-violet-red;
+}
+
+.color--pink {
+    color: $color-pink;
+}
+
+.color--white {
+    color: $color-white;
+}
+
+.bg-color--dark-blue-gray {
+    background-color: $color-dark-blue-gray;
+}
+
+.bg-color--dark-blue {
+    background-color: $color-dark-blue;
+}
+
+.bg-color--waterloo {
+    background-color: $color-waterloo;
+}
+
+.bg-color--violet-red {
+    background-color: $color-violet-red;
+}
+
+.bg-color--pink {
+    background-color: $color-pink;
+}
+
+.bg-color--white {
+    background-color: $color-white;
+}
+
+.bg-color--gradient-1 {
+    @include gradient-1();
+}
+
+.bg-color--gradient-2 {
+    @include gradient-2();
+}
