@@ -1,3 +1,24 @@
 body {
     background-color: $color-white;
+    font-family: $jakarta-font;
+}
+
+h1 {
+    @extend .heading--xl;
+    font-weight: 800;
+}
+
+h2 {
+    @extend .heading--l;
+    font-weight: 800;
+}
+
+h3 {
+    @extend .heading--m;
+    font-weight: 800;
+}
+
+h4 {
+    @extend .heading--s;
+    font-weight: 800;
 }
