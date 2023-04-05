@@ -1,0 +1,38 @@
+---
+import ColorSample from "../components/ColorSample.astro";
+import GridList from "../components/GridList.astro";
+import Header from "../layouts/Header.astro";
+import Layout from "../layouts/Layout.astro"
+
+---
+
+<Layout title="Design" className="design-page">
+    <Header>
+        <span class="color--dark-blue-gray" slot="menu-item-right">design system</span>
+    </Header>
+    <main>
+        <section class="design__container">
+            <h2>Colors</h2>
+            <GridList>
+                <ColorSample name="Dark Blue"></ColorSample>
+                <ColorSample name="Dark Blue Gray"></ColorSample>
+                <ColorSample name="Waterloo"></ColorSample>
+                <ColorSample name="Violet Red"></ColorSample>
+                <ColorSample name="Pink"></ColorSample>
+                <ColorSample name="White"></ColorSample>
+                <ColorSample name="Gradient 1"></ColorSample>
+                <ColorSample name="Gradient 2"></ColorSample>
+            </GridList>
+        </section>
+        <section class="design__container">
+            <h2 class="heading--l">Typography</h2>
+        </section>
+        <section class="design__container">
+            <h2 class="heading--l">Buttons</h2>
+        </section>
+    </main>
+</Layout>
+
+<style>
+
+</style>
