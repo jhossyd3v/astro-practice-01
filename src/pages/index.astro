@@ -1,9 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Header from "../layouts/Header.astro";
 ---
 
-<Layout title="Welcome">
+<Layout title="Index">
+	<Header>
+		<button slot="menu-item-right">Get Started</button>
+	</Header>
+</Layout>
+
+<!-- <Layout title="Welcome">
 	<main>
 		<h1>Project <span class="text-gradient">Started</span></h1>
 		<p class="instructions">
@@ -68,4 +75,4 @@ import Card from "../components/Card.astro";
 		gap: 1rem;
 		padding: 0;
 	}
-</style>
+</style> -->
