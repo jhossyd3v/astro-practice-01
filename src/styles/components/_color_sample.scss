@@ -1,8 +1,21 @@
 .color-sample {
-    width: 200px;
+    box-sizing: border-box;
+    width: 45%;
+
+    @include media('tablet') {
+        width: 20%;
+    }
 
     &__color {
+        border: 1px solid $color-dark-blue-gray;
+        border-radius: 10px;
         height: 125px;
         width: 100%;
+    }
+
+    &__name {
+        color: $color-dark-blue;
+        margin-top: 1rem;
+        text-align: center;
     }
 }
