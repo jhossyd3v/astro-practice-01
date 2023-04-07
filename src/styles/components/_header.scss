@@ -5,12 +5,7 @@
         padding: 3rem 0.5rem 0.5rem;
 
         span {
-            font-size: 28px;
-            font-weight: 800;
-
-            @include media('desktop') {
-                font-size: 36px;
-            }
+            @extend .span-header-footer
         }
     }
 }
