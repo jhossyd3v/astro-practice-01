@@ -1,0 +1,29 @@
+.button {
+    @extend .color--white;
+    border-radius: 28px;
+    padding: 1rem 2rem;
+
+    &--primary {
+        @extend .bg-color--dark-blue;
+
+        &:hover {
+            @extend .bg-color--dark-blue-gray;
+        }
+    }
+
+    &--gradient-1 {
+        @extend .bg-color--gradient-1;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+
+    &--gradient-2 {
+        @extend .bg-color--gradient-2;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}
