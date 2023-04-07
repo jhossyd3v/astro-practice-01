@@ -50,11 +50,18 @@
     }
 
     &--gradient-1 {
-        @include gradient-1();
+        background: rgb(240,42,166);
+        background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
     }
 
     &--gradient-2 {
-        @include gradient-2();
+        background: rgb(240,42,166);
+        background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(72,81,255,1) 100%);
+    }
+
+    &--gradient-3 {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,241,255,1) 100%);
     }
 }
 
