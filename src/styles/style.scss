@@ -6,6 +6,7 @@
 @import './settings/_global.scss';
 @import './settings/_utils.scss';
 
+@import './components/buttons.scss';
 @import './components/grid_list';
 @import './components/color_sample';
 @import './components/header';
@@ -13,22 +14,27 @@
 
 
 .design-page {
+
+    @include media('desktop') {
+        padding: 1rem 7rem;
+    }
+
     .design__container {
         margin-top: 5rem;
+
+        &__title {
+            color: $color-dark-blue-gray;
+            margin-bottom: 2.5rem;
+        }
     }
 
     .grid-list {
         justify-content: center;
     }
 
-    h2 {
-        color: $color-dark-blue-gray;
-        margin-bottom: 2.5rem;
+    .typography-container {
+        box-sizing: border-box;
+        width: 49%;
     }
 
-    main {
-        @include media('desktop') {
-            padding: 1rem 10rem;
-        }
-    }
 }

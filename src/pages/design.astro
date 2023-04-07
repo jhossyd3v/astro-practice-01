@@ -12,27 +12,96 @@ import Layout from "../layouts/Layout.astro"
     </Header>
     <main>
         <section class="design__container">
-            <h2>Colors</h2>
+            <h2 class="heading--l design__container__title">Colors</h2>
             <GridList>
-                <ColorSample name="Dark Blue"></ColorSample>
-                <ColorSample name="Dark Blue Gray"></ColorSample>
-                <ColorSample name="Waterloo"></ColorSample>
-                <ColorSample name="Violet Red"></ColorSample>
-                <ColorSample name="Pink"></ColorSample>
-                <ColorSample name="White"></ColorSample>
-                <ColorSample name="Gradient 1"></ColorSample>
-                <ColorSample name="Gradient 2"></ColorSample>
+                <ColorSample
+                name="Dark Blue"
+                hex="666CA3"
+                rgb="102,108,163"
+                hsl="234°,25%,52%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Dark Blue Gray"
+                hex="13183F"
+                rgb="19,24,63"
+                hsl="233°,54%,16%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Waterloo"
+                hex="83869A"
+                rgb="131,134,154"
+                hsl="232°,10%,56%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Violet Red"
+                hex="F74780"
+                rgb="247,71,128"
+                hsl="341°,92%,62%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Pink"
+                hex="FFA7C3"
+                rgb="255,167,195"
+                hsl="341°,100%,83%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="White"
+                hex="FFFFFF"
+                rgb="255,167,195"
+                hsl="341°,100%,83%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Gradient 1"
+                hex="F02AA6 - FF6F48"
+                rgb="240,42,166"
+                rgb2="255,111,72"
+                hsl="322°,87%,55%"
+                hsl2="13°,100%,64%"
+                >
+                </ColorSample>
+                <ColorSample
+                name="Gradient 2"
+                hex="4851FF - F02AA6"
+                rgb="72,81,255"
+                rgb2="240,42,166"
+                hsl="237°,100%,64%"
+                hsl2="322°,87%,55%"
+                >
+                </ColorSample>
             </GridList>
         </section>
         <section class="design__container">
-            <h2 class="heading--l">Typography</h2>
+            <h2 class="heading--l design__container__title">Typography</h2>
+            <GridList>
+                <section class="typography-container">
+                    <h1>Increase your skill with minimal budget</h1>
+                    <h2>Users all around the globe</h2>
+                    <h3>Check out our most popular courses</h3>
+                    <h4>Photography</h4>
+                </section>
+                <section class="typography-container">
+                    <p class="text--m">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                    <p class="text--s">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo eget felis facilisis fermentum.</p>
+                </section>
+            </GridList>
         </section>
         <section class="design__container">
-            <h2 class="heading--l">Buttons</h2>
+            <h2 class="heading--l design__container__title">Buttons</h2>
+            <GridList>
+                <button class="button button--primary">Get started</button>
+                <button class="button button--gradient-1">Get started</button>
+                <button class="button button--gradient-2">Get started</button>
+            </GridList>
         </section>
     </main>
 </Layout>
-
+<!--
 <style>
 
-</style>
+</style> -->
