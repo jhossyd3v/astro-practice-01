@@ -1,0 +1,11 @@
+.site-footer {
+    padding: 2rem 0.5rem;
+
+    .grid-list {
+        justify-content: space-between;
+    }
+
+    span {
+        @extend .span-header-footer;
+    }
+}

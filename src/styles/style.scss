@@ -1,15 +1,16 @@
-@import './settings/_reset.scss';
-@import './settings/_variables.scss';
-@import './settings/_font.scss';
-@import './settings/_mixins.scss';
-@import './settings/_layout.scss';
-@import './settings/_global.scss';
-@import './settings/_utils.scss';
+@import './settings/reset';
+@import './settings/variables';
+@import './settings/font';
+@import './settings/mixins';
+@import './settings/layout';
+@import './settings/global';
+@import './settings/utils';
 
-@import './components/buttons.scss';
+@import './components/buttons';
 @import './components/grid_list';
 @import './components/color_sample';
 @import './components/header';
+@import './components/footer';
 
 
 
@@ -36,5 +37,8 @@
         box-sizing: border-box;
         width: 49%;
     }
+}
 
+.index-page {
+    @extend .bg-color--gradient-3;
 }

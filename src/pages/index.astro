@@ -2,12 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../layouts/Header.astro";
+import Footer from "../layouts/Footer.astro";
 ---
 
-<Layout title="Index">
+<Layout title="Index" className="index-page">
 	<Header>
 		<button class="button button--primary" slot="menu-item-right">Get Started</button>
 	</Header>
+	<main></main>
+	<Footer></Footer>
 </Layout>
 
 <!-- <Layout title="Welcome">
