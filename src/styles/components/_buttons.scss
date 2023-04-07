@@ -15,7 +15,7 @@
         @extend .bg-color--gradient-1;
 
         &:hover {
-            opacity: 50%;
+            @extend .button-gradient--hover;
         }
     }
 
@@ -23,7 +23,22 @@
         @extend .bg-color--gradient-2;
 
         &:hover {
-            opacity: 50%;
+            @extend .button-gradient--hover;
+        }
+    }
+
+    &-gradient--hover {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            background-color: rgba(255,255,255,0.5);
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
         }
     }
 }
