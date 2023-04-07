@@ -1,9 +1,22 @@
 ---
-    const {name} = Astro.props;
+    export interface Props {
+        name: string;
+        hex: string;
+        rgb: string;
+        rgb2?: string;
+        hsl: string;
+        hsl2?: string;
+    }
+
+    const {name, hex, rgb, hsl, rgb2 = "", hsl2 = ""} = Astro.props;
 ---
 
 <article class="color-sample">
     <div class={`color-sample__color bg-color--${name.split(" ").map(partialName => partialName.toLowerCase()).join("-")}`}>
     </div>
-    <h4 class="color-sample__name">{name}</h4>
+    <h4 class="color-sample__name color--waterloo">#<span class="color--dark-blue">{hex}</span></h4>
+    <p class="text--s color--waterloo"><span>RGB</span><span class="color--dark-blue">{rgb}</span></p>
+    { rgb2 && (<p class="color-optional text--s color--waterloo"><span class="color--dark-blue">{rgb2}</span></p>)}
+    <p class="text--s color--waterloo"><span>HSL</span><span class="color--dark-blue">{hsl}</span></p>
+    { hsl2 && (<p class="color-optional text--s color--waterloo"><span class="color--dark-blue">{hsl2}</span></p>)}
 </article>

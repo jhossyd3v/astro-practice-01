@@ -1,5 +1,6 @@
 .color-sample {
     box-sizing: border-box;
+    margin-bottom: 2.5rem;
     width: 45%;
 
     @include media('tablet') {
@@ -14,8 +15,19 @@
     }
 
     &__name {
-        color: $color-dark-blue;
         margin-top: 1rem;
-        text-align: center;
+        text-align: left;
+    }
+
+    .text--s {
+        font-weight: normal;
+
+        span:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    .color-optional {
+        padding-left: 2.75rem;
     }
 }
