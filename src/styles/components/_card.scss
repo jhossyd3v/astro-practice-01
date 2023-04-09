@@ -1,0 +1,24 @@
+.card {
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    @include flex-gap(1.5rem);
+    max-width: 330px;
+    padding: 3rem 1.8rem 2rem;
+    position: relative;
+
+    &__icon {
+        border-radius: 50%;
+        height: 56px;
+        left: 28px;
+        padding: 1rem;
+        position: absolute;
+        top: -28px;
+        width: 56px;
+    }
+
+    &__title {
+        font-size: 20px;
+    }
+}

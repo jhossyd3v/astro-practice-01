@@ -1,4 +1,22 @@
 ---
+	export interface Props {
+		icon: string;
+		title: string;
+		content: string;
+		linkText: string;
+	}
+
+	const { icon, title, content, linkText } = Astro.props;
+---
+
+<article class="card bg-color--white">
+	<img class="card__icon bg-color--gradient-1" src={`/assets/images/index/${icon}-icon.png`} alt="">
+	<h4 class="card__title color--dark-blue">{title}</h4>
+	<p class="card__content text--m color--waterloo">{content}</p>
+	<a class="card__link" href="#">{linkText}</a>
+</article>
+
+<!-- ---
 export interface Props {
 	title: string;
 	body: string;
@@ -62,3 +80,4 @@ const { href, title, body } = Astro.props;
 		color: rgb(var(--accent));
 	}
 </style>
+ -->
