@@ -1,7 +1,11 @@
 ---
+    export interface Props {
+        className?: string;
+    }
 
+    const {className = ""} = Astro.props;
 ---
 
-<section class="grid-list">
+<section class={`grid-list ${className}`}>
     <slot ></slot>
 </section>
