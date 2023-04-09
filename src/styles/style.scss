@@ -12,6 +12,7 @@
 @import './components/header';
 @import './components/footer';
 @import './components/counter';
+@import './components/card';
 
 
 
@@ -45,9 +46,16 @@
 
     .hero {
         @include flex-gap(3rem);
+        justify-content: space-around;
         padding: 2rem 0.5rem 4rem;
 
         &-card{
+            max-width: 51ch;
+
+            @include media('tablet') {
+                width: 45ch;
+            }
+
             &__title {
                 margin-bottom: 1.75rem;
             }
@@ -58,9 +66,34 @@
         }
 
         &-image {
-            margin: 0 auto;
+            // margin: 0 auto;
             position: relative;
             width: fit-content;
+
+            @include media('tablet') {
+                &::before {
+                    background: rgb(240,42,166);
+                    background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(72,81,255,1) 100%);
+                    border-radius: 150px;
+                    content: '';
+                    height: 200%;
+                    position: absolute;
+                    right: -100%;
+                    bottom: -10%;
+                    transform: rotate(45deg);
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+            @include media('desktop') {
+                margin-right: 10rem;
+
+                &::before  {
+                    height: 150%;
+                    right: -65%;
+                }
+            }
 
             figure {
                 border-radius: 50%;
@@ -69,6 +102,18 @@
                 text-align: center;
                 width: 253px;
                 z-index: 0;
+
+                @include media('tablet') {
+                    border-radius: 150px;
+                    height: auto;
+                    padding-top: 50px;
+                    width: 175px;
+                }
+
+                @include media('desktop') {
+                    padding-top: 75px;
+                    width: 300px;
+                }
 
                 img {
                     width: 100%;
@@ -89,6 +134,11 @@
                     @media (min-width: 375px ) {
                         right: -50px;
                     }
+
+                    @include media('desktop') {
+                        right: -75px;
+                        top: 100px;
+                    }
                 }
 
                 &--left  {
@@ -102,6 +152,33 @@
                     @media (min-width: 375px ) {
                         left: -50px;
                     }
+
+                    @include media('desktop') {
+                        left: -75px;
+                        top: 70%;
+                        bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .index-cards {
+        justify-content: center;
+        padding: 0 1rem 4rem;
+        @include flex-gap(2.5rem);
+
+        .card {
+            border-radius: 10px;
+
+            &--default {
+                box-sizing: border-box;
+                color: $color-white;
+                padding: 4rem 2rem 2rem;
+                // max-width: 310px;
+
+                h4 {
+                    max-width: 15ch;
                 }
             }
         }
