@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 import Header from "../layouts/Header.astro";
 import Footer from "../layouts/Footer.astro";
 import GridList from "../components/GridList.astro";
-import Counter from "../components/Counter.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout title="Index" className="index-page">
@@ -12,20 +12,7 @@ import Counter from "../components/Counter.astro";
 		<button class="button button--primary" slot="menu-item-right">Get Started</button>
 	</Header>
 	<main>
-		<GridList className="hero">
-			<section class="hero-card">
-				<h2 class="hero-card__title heading--l">Maximize skill, minimize budget</h2>
-				<p class="hero-card__text text--m">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-				<button class="hero-card__button button button--gradient-1">Get Started</button>
-			</section>
-			<section class="hero-image">
-				<Counter className="counter--right" textContent="Members" total="29k"></Counter>
-				<Counter className="counter--left" textContent="Course hours" total="1,451"></Counter>
-				<figure class="bg-color--gradient-1">
-					<img src="/assets/images/index/person.png" alt="">
-				</figure>
-			</section>
-		</GridList>
+		<Hero/>
 		<GridList className="index-cards">
 			<article class="card card--default bg-color--gradient-1">
 				<h4>Check out our most popular courses!</h4>

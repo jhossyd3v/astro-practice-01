@@ -1,13 +1,18 @@
 .site-footer {
     padding: 2rem 0.5rem;
 
+    @include media('tablet') {
+        padding: 2rem 10% 0.5rem;
+    }
+
+    @include media('desktop') {
+        justify-content: space-around;
+        padding: 2rem 15% 0.5rem;
+    }
+
     .grid-list {
         align-items: center;
         justify-content: space-between;
-
-        @include media('desktop') {
-            justify-content: space-around;
-        }
     }
 
     span {
