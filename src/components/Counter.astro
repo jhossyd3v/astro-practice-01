@@ -1,0 +1,14 @@
+---
+    export interface Props {
+        textContent: string;
+        total: string;
+        className?: string;
+    }
+
+    const {textContent, total, className = ""} = Astro.props;
+---
+
+<section class={`counter ${className} bg-color--white`}>
+    <span class="counter__text color--waterloo">{textContent}</span>
+    <span class="counter__total color--dark-blue">{total}</span>
+</section>
