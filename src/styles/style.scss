@@ -11,6 +11,7 @@
 @import './components/color_sample';
 @import './components/header';
 @import './components/footer';
+@import './components/counter';
 
 
 
@@ -41,4 +42,68 @@
 
 .index-page {
     @extend .bg-color--gradient-3;
+
+    .hero {
+        @include flex-gap(3rem);
+        padding: 2rem 0.5rem 4rem;
+
+        &-card{
+            &__title {
+                margin-bottom: 1.75rem;
+            }
+
+            &__text {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-image {
+            margin: 0 auto;
+            position: relative;
+            width: fit-content;
+
+            figure {
+                border-radius: 50%;
+                height: 253px;
+                overflow: hidden;
+                text-align: center;
+                width: 253px;
+                z-index: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .counter {
+                position: absolute;
+                z-index: 1;
+
+                &--right    {
+                    right: -20px;
+
+                    @media (min-width: 350px ) {
+                        right: -40px;
+                    }
+
+                    @media (min-width: 375px ) {
+                        right: -50px;
+                    }
+                }
+
+                &--left  {
+                    bottom: 0;
+                    left: -20px;
+
+                    @media (min-width: 350px ) {
+                        left: -40px;
+                    }
+
+                    @media (min-width: 375px ) {
+                        left: -50px;
+                    }
+                }
+            }
+        }
+    }
 }
