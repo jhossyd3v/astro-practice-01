@@ -2,7 +2,12 @@
     padding: 2rem 0.5rem;
 
     .grid-list {
+        align-items: center;
         justify-content: space-between;
+
+        @include media('desktop') {
+            justify-content: space-around;
+        }
     }
 
     span {

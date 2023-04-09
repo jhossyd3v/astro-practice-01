@@ -1,8 +1,17 @@
 .site-menu {
     &__list {
+        align-items: center;
         display: flex;
         justify-content: space-between;
         padding: 3rem 0.5rem 0.5rem;
+
+        @include media('tablet') {
+            padding: 1.5rem 2.5rem 0;
+        }
+
+        @include media('desktop') {
+            justify-content: space-around;
+        }
 
         span {
             @extend .span-header-footer
