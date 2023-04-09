@@ -1,6 +1,7 @@
 .button {
     @extend .color--white;
     border-radius: 28px;
+    font-weight: bold;
     padding: 1rem 2rem;
 
     &--primary {
