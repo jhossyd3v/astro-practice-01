@@ -1,0 +1,19 @@
+---
+    import GridList from "../components/GridList.astro";
+    import Counter from "../components/Counter.astro";
+---
+
+<GridList className="hero">
+    <section class="hero-card">
+        <h2 class="hero-card__title heading--l">Maximize skill, minimize budget</h2>
+        <p class="hero-card__text text--m">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <button class="hero-card__button button button--gradient-1">Get Started</button>
+    </section>
+    <section class="hero-image">
+        <Counter className="counter--right" textContent="Members" total="29k"></Counter>
+        <Counter className="counter--left" textContent="Course hours" total="1,451"></Counter>
+        <figure class="bg-color--gradient-1">
+            <img src="/assets/images/index/person.png" alt="">
+        </figure>
+    </section>
+</GridList>
