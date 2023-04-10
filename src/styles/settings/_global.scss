@@ -28,6 +28,10 @@ a {
     color: $color-violet-red;
     font-size: 18px;
     font-weight: bold;
+
+    &:hover {
+        color: $color-pink;
+    }
 }
 
 .span-header-footer {
