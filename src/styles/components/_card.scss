@@ -11,6 +11,10 @@
         max-width: 300px;
     }
 
+    @include media('desktop') {
+        max-width: 30%;
+    }
+
     &__icon {
         border-radius: 50%;
         height: 56px;

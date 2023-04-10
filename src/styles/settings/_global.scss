@@ -7,21 +7,25 @@ body {
 h1 {
     @extend .heading--xl;
     font-weight: 800;
+    line-height: 70px;
 }
 
 h2 {
     @extend .heading--l;
     font-weight: 800;
+    line-height: 51px;
 }
 
 h3 {
     @extend .heading--m;
     font-weight: 800;
+    line-height: 40px;
 }
 
 h4 {
     @extend .heading--s;
     font-weight: 800;
+    line-height: 28px;
 }
 
 a {
