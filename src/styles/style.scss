@@ -60,8 +60,13 @@
             &--default {
                 box-sizing: border-box;
                 color: $color-white;
-                padding: 4rem 2rem 2rem;
-                // max-width: 310px;
+                padding: 2rem;
+                width: 100%;
+
+                @include media('tablet') {
+                    padding: 4rem 2rem 2rem;
+                    max-width: 310px;
+                }
 
                 h4 {
                     max-width: 15ch;
